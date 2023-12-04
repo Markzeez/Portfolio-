@@ -1,30 +1,54 @@
 import React from "react";
+import Burger from '../assets/Burger.png'
 
 const Work = () => {
   return (
-    <div name="work" className="w-full md:h-screen text-black  bg-[#FCEADE]">
+    <div name="work" className="w-full md:h-screen text-yellow-400   bg-[#090503]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-screen">
         <div className="pb-8 ">
-          <p className="text-4xl font-bold inline border-b-4 text-black border-pink-600 ">Work</p>
-          <p className="py-6">//Check out some of my recent work </p>
+          <p className="text-4xl font-bold inline border-b-4 text-yellow-400 border-yellow-600 ">Work</p>
         </div>
-
-        <div style={{backgroundImage: 'url(${?})'}} 
+{/**Container */}
+        <div 
         className="grid sm:grid-cols-2 md:grid-col gap-4 ">
-          <div className="shadow-lg shadow-[] group container rounded-md flec justify-center items-center mx-auto content-div">
+         
+         {/**Grid */}
+          <div style={{backgroundImage: 'url(${Burger})'}} 
+           className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div">
            
            {/**hover effect */}
             <div className="opacity-0 group-hover:opacity-100">
               
-                <span className="text-2xl font-bold twxt-white tracking-wider  ">Burger ECommerce</span>
+                <span className="text-2xl font-bold twxt-white tracking-wider  ">Burger E-Commerce</span>
                 <div className="pt-8 text-center">
-                  <a href="/">
+                  <a href="https://vercel.com/azeezs-projects/burger-king/2RsJwCBcG6Jqd2yvniacQx1kEg5h">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-black font-bold text-lg">Demo</button>
                   </a>
-                  <a href="/">
+                  <a href="https://github.com/Markzeez/Burger-King">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-black font-bold text-lg">Code</button>
                   </a>
                 </div>
+              
+            </div>
+          </div>
+          
+          <div style={{backgroundImage: 'url(${Working})'}} 
+           className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div">
+           
+           {/**hover effect */}
+            <div className="opacity-0 group-hover:opacity-100">
+              
+                <span className="text-2xl font-bold twxt-white tracking-wider  ">ACME Shophere Ecommerce</span>
+                <div className="pt-8 text-center">
+                  <a href="https://vercel.com/azeezs-projects/acme-shophere">
+                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-black font-bold text-lg">Demo</button>
+                  </a>
+                  <a href="https://github.com/Markzeez/ACME-SHOPHERE">
+                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-black font-bold text-lg">Code</button>
+                  </a>
+                </div>
+              
+           
               
             </div>
           </div>

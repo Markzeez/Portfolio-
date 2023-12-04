@@ -4,6 +4,7 @@ import About from './Component/About'
 import Home from "./Component/Home";
 import Skills from "./Component/Skills";
 import Work from "./Component/Work";
+import Contact from "./Component/Contact";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <About/>
       <Skills/>
       <Work/>
+      <Contact/>
       
         
     </div>
