@@ -1,5 +1,5 @@
 import React from "react";
-import Burger from '../assets/Burger.png'
+
 
 const Work = () => {
   return (
@@ -13,7 +13,7 @@ const Work = () => {
         className="grid sm:grid-cols-2 md:grid-col gap-4 ">
          
          {/**Grid */}
-          <div style={{backgroundImage: 'url(${Burger})'}} 
+          <div style={{backgroundImage: ''}} 
            className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div">
            
            {/**hover effect */}
@@ -21,7 +21,7 @@ const Work = () => {
               
                 <span className="text-2xl font-bold twxt-white tracking-wider  ">Burger E-Commerce</span>
                 <div className="pt-8 text-center">
-                  <a href="https://vercel.com/azeezs-projects/burger-king/2RsJwCBcG6Jqd2yvniacQx1kEg5h">
+                  <a href="https://burger-king-azeezs-projects.vercel.app/">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-black font-bold text-lg">Demo</button>
                   </a>
                   <a href="https://github.com/Markzeez/Burger-King">

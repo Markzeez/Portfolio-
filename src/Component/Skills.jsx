@@ -52,7 +52,7 @@ const Skills = () => {
           </div>
           <div className="shadow-md shadow-[#d8c2b3] hover:scale-110 duration-500">
           <FaGithub  size={60} className="w-20 mx-auto" />
-            <p className="my-4">Tailwind CSS</p>
+            <p className="my-4">Github</p>
           </div>
           
         </div>
