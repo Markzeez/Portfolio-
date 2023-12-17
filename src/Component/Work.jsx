@@ -1,6 +1,11 @@
 import React from "react";
 
+
 const Work = () => {
+  const externalImage = "https://res.cloudinary.com/dyjo2mvqb/image/upload/v1702834750/Burger_a2pxy8.png"
+  const externalImage1 = "https://res.cloudinary.com/dyjo2mvqb/image/upload/v1702836314/Screenshot_2023-12-17_190326_un4mzf.png"
+  const externalImage2 ="https://res.cloudinary.com/dyjo2mvqb/image/upload/v1702837079/Screenshot_2023-12-17_191243_nkonmu.png"
+  const externalImage3 = 'https://res.cloudinary.com/dyjo2mvqb/image/upload/v1702837743/Screenshot_2023-12-17_192611_iqzbhf.png'
   return (
     <div
       name="work"
@@ -16,7 +21,7 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-col gap-4 ">
           {/**Grid */}
           <div
-            style={{ backgroundImage: "" }}
+            style={{ backgroundImage: `url(${externalImage})` }}
             className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div"
           >
             {/**hover effect */}
@@ -35,7 +40,7 @@ const Work = () => {
           </div>
 
           <div
-            style={{ backgroundImage: "url(${Working})" }}
+            style={{ backgroundImage: `url(${externalImage1})` }}
             className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div"
           >
             {/**hover effect */}
@@ -56,7 +61,7 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-col gap-4 ">
           {/**Grid */}
           <div
-            style={{ backgroundImage: "" }}
+           style={{ backgroundImage: `url(${externalImage2})` }}
             className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div"
           >
             {/**hover effect */}
@@ -75,7 +80,7 @@ const Work = () => {
           </div>
 
           <div
-            style={{ backgroundImage: "url(${Working})" }}
+            style={{ backgroundImage: `url(${externalImage3})` }}
             className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div"
           >
             {/**hover effect */}
