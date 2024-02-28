@@ -11,7 +11,7 @@ const Work = () => {
       name="work"
       className="w-full md:h-screen text-yellow-400   bg-[#090503]"
     >
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full pb-8 space-y-8">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full pb-6 space-y-8">
         <div className="pb-8 ">
           <p className="text-4xl font-bold inline border-b-4 text-yellow-400 border-yellow-600 ">
             Work

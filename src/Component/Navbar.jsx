@@ -8,10 +8,17 @@ import { FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import {Link} from 'react-scroll'
 import { IoDocumentTextSharp } from "react-icons/io5";
+import { IoMenuOutline } from 'react-icons/io5';
+import { IoCloseOutline } from 'react-icons/io5';
 
 const Navbar = () => {
   const [nav, setNav] = useState (false)
-  const handleClick = () => setNav(!nav)
+  const handleClick = () => {
+    setNav(!nav);
+  };
+  const handleNav = () => {
+    setNav(!nav);
+  };
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#090503] text-yellow-400  ">
       <div>
@@ -21,28 +28,57 @@ const Navbar = () => {
         className="rounded-full "
       />
       </div>
-      {/**menu  */}
+      {/**menu desktop view  */}
 
-      <ul className="hidden md:flex  ">
-        <li className="hover:bg-yellow-50 rounded-full"> <Link  to="home"  smooth={true}  duration={500}> Home </Link> </li>
-        <li className="hover:bg-yellow-50 rounded-full"> <Link  to="about"  smooth={true}  duration={500}> About </Link> </li>
-        <li className="hover:bg-yellow-50 rounded-full"> <Link  to="skills"  smooth={true}  duration={500}> Skills </Link> </li>
-        <li className="hover:bg-yellow-50 rounded-full"> <Link  to="work"  smooth={true}  duration={500}> Work </Link> </li>
-        <li className="hover:bg-yellow-50 rounded-full"> <Link  to="contact"  smooth={true}  duration={500}> Contact </Link> </li>
+      <ul className="hidden md:flex ">
+        <li className=" hover:text-yellow-500 hover:underline hover:transition"> <Link  to="home"  smooth={true}  duration={500}> Home </Link> </li>
+        <li className="hover:text-yellow-500 hover:underline hover:transition"> <Link  to="about"  smooth={true}  duration={500}> About </Link> </li>
+        <li className="hover:text-yellow-500 hover:underline hover:transition"> <Link  to="skills"  smooth={true}  duration={500}> Skills </Link> </li>
+        <li className="hover:text-yellow-500 hover:underline hover:transition"> <Link  to="work"  smooth={true}  duration={500}> Work </Link> </li>
+        <li className="hover:text-yellow-500 hover:underline hover:transition"> <Link  to="contact"  smooth={true}  duration={500}> Contact </Link> </li>
       </ul>
 
       <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <IoMdMenu /> : <CiMenuBurger />  }
+        {!nav ? <IoMdMenu /> : <IoCloseOutline/>  }
       </div>
 
+
+       {/* Hamburger
+       <div onClick={handleNav} className="md:hidden z-10">
+        {nav ? (
+          <div className="flex flex-row space-x-5 text-white">
+            <IoCloseOutline className="text-white" size={20} />{' '}
+            <div className='flex flex-row space-x-2'>
+            
+            </div>
+          </div>
+        ) : (
+          <IoMenuOutline className="text-black" size={15} />
+        )}
+      </div> */}
       {/**Mobile */}
-      <ul className={!nav ? "hidden" : " absolute top-0 left-0 w-full h-screen bg-[#FCEADE] flex flex-col justify-center items-center "}>
-        <li className="py-6 text-4xl "><Link onClick={handleClick} to="home"  smooth={true}  duration={500}> Home </Link></li>
-        <li className="py-6 text-4xl "><Link onClick={handleClick} to="about"  smooth={true}  duration={500}> About </Link></li>
-        <li className="py-6 text-4xl "> <Link onClick={handleClick} to="skills"  smooth={true}  duration={500}> Skills </Link></li>
-        <li className="py-6 text-4xl "><Link onClick={handleClick}  to="work"  smooth={true}  duration={500}> Work </Link></li>
-        <li className="py-6 text-4xl "><Link onClick={handleClick} to="contact"  smooth={true}  duration={500}> Contact </Link></li>
-      </ul>
+      <div
+        onClick={handleNav}
+        className={
+          nav
+            ? 'absolute text-black left-0 top-0 w-full bg-[#090503] px-2 py-7 flex flex-col pl-8 focus:underline-offset-2 '
+            : 'absolute left-[-100%]'
+        }
+      >
+        <ul className='text-yellow-400 font-semibold text-left space-x-5  '>
+         <div>
+         <div>
+      
+      </div>
+        <Link to="home"> <li className="hover:underline hover:transition-opacity space-x-4 ">Home</li></Link>
+         <Link to="about"> <li className="hover:underline hover:transition-opacity ">About</li></Link>
+         <Link to="skills"><li className="hover:underline hover:transition-opacity ">Skills</li></Link>
+          <Link to="work"><li className="hover:underline hover:transition-opacity ">Work</li></Link>
+         <Link to="contact"> <li className="hover:underline hover:transition-opacity ">Contact</li></Link>
+  
+          </div>        
+        </ul>
+      </div>
 
       {/**Social Icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">

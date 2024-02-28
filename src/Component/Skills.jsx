@@ -23,7 +23,7 @@ const Skills = () => {
           <p className="py-4 ">Tech Stack</p>
         </div>
 
-        <div className="w-full grid grid-cols-5 sm:grid-col-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 sm:items-center  gap-4 text-center py-8">
           <div className="shadow-md shadow-[#d8c2b3] hover:scale-110 duration-500 ">
             <FaHtml5 size={60} className="w-20 mx-auto" />
             <p className="my-4">HTML</p>
