@@ -18,7 +18,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <p>
+            <p className='text-sm font-semibold'>
               I'm a frontend developer with two year of experience in web
               development technology. I've worked on variety of projects for client, 
               Ecommerce, Service Provider and so on I'm passionate about creating 

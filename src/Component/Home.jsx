@@ -34,7 +34,7 @@ repeat={Infinity}
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b4]">
           Software Developer
         </h2>
-        <p className="text-[#8892b8] py-4 max-w-[700px]">
+        <p className="text-[#8892b8] text-sm font-semibold py-4 max-w-[700px]">
           A Frontend and Backend Focus Web Development building the User Interphase and User Experience of Website application and Server side,
           and Mobile Application that leads to the success of the overall product and
           Freelance providing service for programming,  deployment, testing , design , content needs
