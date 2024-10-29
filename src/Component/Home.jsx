@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   const [show, SetShow] = useState(false);
@@ -14,13 +15,29 @@ const Home = () => {
         <h1 className="text-4xl sm:text-7xl font-bold text-[#c7d5ad]">
           AZEEZ IBRAHIM
         </h1>
+        {/* <TypeAnimation
+sequence={[
+  'Frontend Developer',
+  1000,
+  'Software Developer',
+  1000,
+  'UI Engineer',
+  1000,
+  'Backend Developer',
+  1000,
+]}
+wrapper="span"
+speed={50}
+style={{ fontSize: '2rem', display: 'inline-block',color: 'yellow',fontWeight: 'bold' }}
+repeat={Infinity}
+/> */}
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b4]">
-          Frontend Developer
+          Software Developer
         </h2>
         <p className="text-[#8892b8] py-4 max-w-[700px]">
-          A frontend Focus Web Developer building the Frontend of Websites and
-          Web Application that leads to the success of the overall product and
-          Freelance providing service for programming and design content needs
+          A Frontend and Backend Focus Web Development building the User Interphase and User Experience of Website application and Server side,
+          and Mobile Application that leads to the success of the overall product and
+          Freelance providing service for programming,  deployment, testing , design , content needs
         </p>
         <div>
           <button
@@ -33,6 +50,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Home from "./Component/Home";
 import Skills from "./Component/Skills";
 import Work from "./Component/Work";
 import Contact from "./Component/Contact";
+import LogoSide from "./Component/LogoSide";
 
 
 
@@ -17,6 +18,8 @@ function App() {
       <Skills/>
       <Work/>
       <Contact/>
+      
+      
       
         
     </div>
