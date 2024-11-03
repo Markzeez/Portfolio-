@@ -21,7 +21,7 @@ const About = () => {
             <p className='text-sm font-semibold'>
               I'm a frontend developer with two year of experience in web
               development technology. I've worked on variety of projects for client, 
-              Ecommerce, Service Provider and so on I'm passionate about creating 
+              E-commerce, Service Provider and so on I'm passionate about creating 
               user experience and have a simple understanding of re-usable and
               accessibility standards. 
             </p>
