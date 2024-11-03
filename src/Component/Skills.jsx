@@ -4,12 +4,15 @@ import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
-import { SiFramer } from "react-icons/si";
+import { SiChakraui, SiExpo, SiFramer } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-import { DiJqueryLogo } from "react-icons/di";
+import { DiDjango, DiJqueryLogo } from "react-icons/di";
 import { FaGithub } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+
 
 const Skills = () => {
   return (
@@ -23,7 +26,7 @@ const Skills = () => {
           <p className="py-4 ">Tech Stack</p>
         </div>
 
-        <div className="w-full grid grid-cols-5 sm:grid-col-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 sm:items-center  gap-4 text-center py-8">
           <div className="shadow-md shadow-[#d8c2b3] hover:scale-110 duration-500 ">
             <FaHtml5 size={60} className="w-20 mx-auto" />
             <p className="my-4">HTML</p>
@@ -64,7 +67,26 @@ const Skills = () => {
           <SiNextdotjs  size={60} className="w-20 mx-auto" />
             <p className="my-4">Nextjs</p>
           </div>
-          
+          <div className="shadow-md shadow-[#d8c2b3] hover:scale-110 duration-500">
+          <FaPython  size={60} className="w-20 mx-auto" />
+            <p className="my-4">Python</p>
+          </div>
+          <div className="shadow-md shadow-[#d8c2b3] hover:scale-110 duration-500">
+          <FaNode  size={60} className="w-20 mx-auto" />
+            <p className="my-4">Nodejs</p>
+          </div>
+          {/* <div className="shadow-md shadow-[#d8c2b3] hover:scale-110 duration-500"> */}
+          {/* <DiDjango size={60} className="w-20 mx-auto" />
+            <p className="my-4">Django</p>
+          </div> */}
+          {/* <div className="shadow-md shadow-[#d8c2b3] hover:scale-110 duration-500">
+          <SiExpo size={60} className="w-20 mx-auto" />
+            <p className="my-4">Expo</p>
+          </div> */}
+           <div className="shadow-md shadow-[#d8c2b3] hover:scale-110 duration-500">
+            <SiChakraui size={60} className="w-20 mx-auto" />
+            <p className="my-4">Charka UI</p>
+          </div>
         </div>
       </div>
     </div>
