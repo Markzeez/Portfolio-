@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 const Contact = () => {
   return (
@@ -12,6 +13,7 @@ const Contact = () => {
         <textarea className='bg-[#ccd6f6] p-2 rounded' name="message" rows="10" placeholder='Message'></textarea>
         <button className='text-white bottom-2 rounded hover:bg-yellow-600 hover:border-yellow-600 px-4 py-3 my-8 mx-auto flex items-center hover:shadow-sm '>Get in touch</button>
       </form>
+    
     </div>
   )
 }
