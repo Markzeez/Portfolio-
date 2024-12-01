@@ -62,7 +62,7 @@ const Work = () => {
           {/**Grid */}
           <div
            style={{ backgroundImage: `url(${externalImage2})` }}
-            className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div"
+            className="shadow-lg shadow-[#d8c2b3] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/**hover effect */}
             <div className="opacity-0 group-hover:opacity-100">

@@ -23,6 +23,7 @@ function App() {
       <Work/>
       <Contact/>
       <Footer/>
+      
       {/* <CustomCarousel/> */}
       
       

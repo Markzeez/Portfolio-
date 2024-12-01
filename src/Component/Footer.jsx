@@ -3,7 +3,7 @@ import { BiArrowToTop } from "react-icons/bi";
 const Footer = () => {
     return (
       <footer className=" text-yellow-400 py-6 bg-[#090503] ">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="container mx-auto px-4 flex flex-row md:flex-row justify-between items-center">
        
          {/* Social Media Icons */}
          <div className="flex space-x-4 mt-4 md:mt-0">
@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Navigation Links */}
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#top" className="rounded-full w-[30px] h-[30px] ">
-              <BiArrowToTop size={20}/>
+              <BiArrowToTop size={20} className="w-[30px] h-[30px] hover:text-white rounded-full"/>
             </a>
            
           </div>

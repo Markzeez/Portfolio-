@@ -24,23 +24,24 @@ const Home = () => {
             1000,
             'UI Engineer',
             1000,
-            'Backend Developer',
-            1000,
+            // 'Backend Developer',
+            // 1000,
           ]}
           wrapper="span"
           speed={50}
           style={{
-            fontSize: '3rem',
+            fontSize: '2rem',
             display: 'inline-block',
             color: '#8892b4',
-            fontWeight: '2rem',
+            fontWeight: '1rem',
+            // hidden: 'true',
           }}
           repeat={Infinity}
         />
-        {/* <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b4]">
+        {/* <h2 className="lg:hidden ext-4xl sm:text-7xl font-bold text-[#8892b4]">
           Software Developer
         </h2> */}
-        <div className="flex flex-row gap-8 justify-between ">
+        <div className="flex flex-row gap-8 justify-between">
           <p className="text-[#8892b8] text-sm font-semibold py-4 max-w-[700px]">
             A Frontend and Backend Focus Web Development building the User
             Interphase and User Experience of Website application and Server

@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const CustomCarousel = ({ images }) => {
+const CustomCarousel = ({ images = [] }) => {
   // Custom next and previous buttons
   const NextArrow = ({ onClick }) => (
     <button
@@ -37,17 +37,21 @@ const CustomCarousel = ({ images }) => {
 
   return (
     <div className="relative">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-[350px] object-cover"
-            />
-          </div>
-        ))}
-      </Slider>
+      {images.length > 0 ? (
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+          ))}
+        </Slider>
+      ) : (
+        <p className="text-center text-gray-500">No images to display</p>
+      )}
     </div>
   );
 };
