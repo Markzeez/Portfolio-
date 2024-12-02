@@ -34,6 +34,7 @@ const Navbar = () => {
       <ul className="hidden md:flex ">
         <li className=" hover:text-yellow-500 hover:underline hover:transition"> <Link to="home"  smooth={true}  duration={500}> Home </Link> </li>
         <li className="hover:text-yellow-500 hover:underline hover:transition"> <Link  to="about"  smooth={true}  duration={500}> About </Link> </li>
+        <li className="hover:text-yellow-500 hover:underline hover:transition"><Link  to="experience"  smooth={true}  duration={500}> Experience </Link> </li>
         <li className="hover:text-yellow-500 hover:underline hover:transition"> <Link  to="skills"  smooth={true}  duration={500}> Skills </Link> </li>
         <li className="hover:text-yellow-500 hover:underline hover:transition"> <Link  to="work"  smooth={true}  duration={500}> Work </Link> </li>
         <li className="hover:text-yellow-500 hover:underline hover:transition"> <Link  to="contact"  smooth={true}  duration={500}> Contact </Link> </li>
@@ -47,20 +48,21 @@ const Navbar = () => {
         onClick={handleNav}
         className={
           nav
-            ? 'absolute text-black left-0 top-0 w-[250px] bg-[#060302] px-2 py-7 flex flex-col pl-8 focus:underline-offset-2 '
+            ? 'absolute text-black left-0 top-0 w-full bg-[#060302] px-2 py-7 flex flex-col pl-8 focus:underline-offset-2 '
             : 'absolute left-[-100%]'
         }
       >
-        <ul className='text-yellow-400 font-semibold text-left space-x-5  '>
+        <ul className='text-yellow-400 font-semibold text-left space-x-9 py-9 pr-5   '>
          <div>
          <div>
       
       </div>
-        <Link to="home"> <li className="hover:border-b border-yellow-400  hover:transition-opacity space-x-4 ">Home</li></Link>
-         <Link to="about"> <li className="hover:border-b border-yellow-400 hover:transition-opacity ">About</li></Link>
-         <Link to="skills"><li className="hover:border-b border-yellow-400 hover:transition-opacity ">Skills</li></Link>
-          <Link to="work"><li className="hover:border-b border-yellow-400 hover:transition-opacity ">Work</li></Link>
-         <Link to="contact"> <li className="hover:border-b border-yellow-400 hover:transition-opacity ">Contact</li></Link>
+        <Link to="home"> <li className="hover:bg-yellow-400 hover:text-black  hover:transition-opacity space-x-4 ">Home</li></Link>
+         <Link to="about"> <li className="hover:bg-yellow-400 hover:text-black hover:transition-opacity ">About</li></Link>
+         <Link to="experience"> <li className="hover:bg-yellow-400 hover:text-black hover:transition-opacity ">Experience</li></Link>
+         <Link to="skills"><li className="hover:bg-yellow-400 hover:text-black hover:transition-opacity ">Skills</li></Link>
+          <Link to="work"><li className="hover:bg-yellow-400 hover:text-black hover:transition-opacity ">Work</li></Link>
+         <Link to="contact"> <li className="hover:bg-yellow-400 hover:text-black hover:transition-opacity ">Contact</li></Link>
   
           </div>        
         </ul>

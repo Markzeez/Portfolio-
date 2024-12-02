@@ -9,7 +9,7 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full md:h-screen text-yellow-400   bg-[#090503] "
+      className="w-full md:h-screen text-yellow-400 bg-[#090503] pb-[50px]"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full pb-6 space-y-8 ">
         <div className="pb-8 ">
@@ -62,7 +62,7 @@ const Work = () => {
           {/**Grid */}
           <div
            style={{ backgroundImage: `url(${externalImage2})` }}
-            className="shadow-lg shadow-[#d8c2b3] group container rounded-md flec justify-center items-center mx-auto content-div"
+            className="shadow-lg shadow-[#d8c2b3] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/**hover effect */}
             <div className="opacity-0 group-hover:opacity-100">
