@@ -16,7 +16,7 @@ import { FaNode } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <div name="skills" className=" w-full h-screen  bg-[#090503] text-yellow-400">
+    <div name="skills" className=" w-full h-screen  bg-[#090503] text-yellow-400 pt-[30px]">
       {/**Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center  w-full h-full">
         <div>
