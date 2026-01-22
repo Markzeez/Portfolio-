@@ -6,8 +6,8 @@ const Footer = () => {
         <div className="container mx-auto px-4 flex flex-row md:flex-row justify-between items-center">
        
          {/* Social Media Icons */}
-         <div className="flex space-x-4 mt-4 md:mt-0">
-            {/* <a href="#" aria-label="Facebook">
+         <div className="flex space-x-4 mt-4 md:mt-0 ml-[100px]">
+            <a href="#" aria-label="Facebook">
               <svg
                 className="w-6 h-6 fill-current hover:text-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const Footer = () => {
               >
                 <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.86 9.86 0 01-3.127 1.195 4.917 4.917 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475 4.917 4.917 0 002.188 4.1A4.904 4.904 0 01.96 9.097v.062a4.917 4.917 0 003.946 4.827 4.902 4.902 0 01-2.21.084 4.917 4.917 0 004.6 3.417A9.867 9.867 0 010 19.54a13.924 13.924 0 007.548 2.209c9.055 0 14.004-7.502 14.004-14.004 0-.213-.005-.425-.014-.637A10.025 10.025 0 0024 4.557z" />
               </svg>
-            </a> */}
+            </a>
           </div>
        
           {/* Logo/Brand */}
@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Navigation Links */}
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#top" className="rounded-full w-[30px] h-[30px] ">
-              <BiArrowToTop size={20} className="w-[30px] h-[30px] hover:text-white rounded-full"/>
+              <BiArrowToTop size={20} className=" hover:text-white rounded-full"/>
             </a>
            
           </div>

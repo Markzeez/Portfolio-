@@ -1,4 +1,3 @@
-import React from 'react';
 
 const About = () => {
   return (
@@ -19,7 +18,7 @@ const About = () => {
           </div>
           <div>
             <p className='text-sm font-semibold'>
-              I'm a frontend developer with two year of experience in web
+              I'm a frontend developer with two year of experience in web and mobile
               development technology. I've worked on variety of projects for client, 
               E-commerce, Service Provider and so on I'm passionate about creating 
               user experience and have a simple understanding of re-usable and

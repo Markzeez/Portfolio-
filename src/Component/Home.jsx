@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+// import { useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { TypeAnimation } from 'react-type-animation';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
+// import ThreeDScene from './ThreeDScene';
+
 
 const Home = () => {
-  const [show, SetShow] = useState(false);
-  const handleClick = () => SetShow(!show);
+  // const [show, SetShow] = useState(false);
+  // const handleClick = () => SetShow(!show);
 
   return (
+    
+   
     <div name="home" className="w-full h-screen bg-[#090503] ">
       {/**Container */}
+      
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-yellow-50">Hi, my name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#c7d5ad]">
@@ -24,8 +29,14 @@ const Home = () => {
             1000,
             'UI Engineer',
             1000,
-            // 'Backend Developer',
-            // 1000,
+            'Backend Developer',
+            1000,
+            'Creative Developer',
+            1000,
+            'Mobile Developer',
+            1000,
+             'Game Developer',
+            1000,
           ]}
           wrapper="span"
           speed={50}
@@ -49,6 +60,10 @@ const Home = () => {
             overall product and Freelance providing service for programming,
             deployment, testing , design , content needs
           </p>
+          
+          
+          {/* <ThreeDScene/> */}
+          
           {/* <motion.div
           className="w-16 h-16 bg-yellow-500 "
             animate={{
@@ -73,6 +88,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    
+    
   );
 };
 
